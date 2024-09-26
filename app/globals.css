@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,4 +27,29 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+/* Dark mode custom styles */
+.dark .bg-gray-100 {
+  background-color: #1a202c; /* Dark mode background */
+}
+
+.dark .bg-gray-200 {
+  background-color: #2d3748; /* Dark mode background */
+}
+
+.dark .text-gray-600 {
+  color: #e2e8f0; /* Light text color */
+}
+
+.dark .text-gray-700 {
+  color: #edf2f7; /* Light text color */
+}
+
+.dark .text-gray-900 {
+  color: #f7fafc; /* Light text color */
+}
+
+/* Additional custom styles for smooth transitions */
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease;
 }
