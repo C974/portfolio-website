@@ -36,3 +36,31 @@ module.exports = {
   },
   plugins: [],
 }
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'],
+      },
+      colors: {
+        blue: {
+          400: '#60A5FA',
+          600: '#2563EB',
+        },
+        purple: {
+          400: '#C084FC',
+          600: '#7C3AED',
+        },
+      },
+    },
+  },
+  plugins: [],
+}
