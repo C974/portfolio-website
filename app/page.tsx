@@ -858,7 +858,8 @@ export default function Home() {
               </div>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
-                <a className="text-blue-600 dark:text-blue-400 mb-2" href='https://www.hbku.edu.qa/en/qcri'>Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
+                <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" href='https://www.hbku.edu.qa/en/qcri'>
+                Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">May 2024 - July 2024</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                   <li>Utilized Python libraries for web crawling and data extraction.</li>
@@ -876,8 +877,14 @@ export default function Home() {
           <section>
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Education</h2>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
-              <a href='https://qu.edu.qa'><h3 className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" >
-                Qatar University</h3></a>
+              {/* <a href='https://qu.edu.qa'><h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200" >Qatar University</h3></a> */}
+              <a href="https://qu.edu.qa" className="relative inline-block group">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
+                  Qatar University
+                  <span className="absolute bottom-0 left-0 h-[2px] w-full bg-gray-800 dark:bg-gray-200 scale-x-0 origin-bottom-right transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
+                </h3>
+              </a>
+
               <p className="text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Science, Concentration in Cyber Security</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p>
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
