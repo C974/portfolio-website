@@ -777,7 +777,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">Anas Madkoor</h1>
             <p className="text-2xl mb-4 text-gray-700 dark:text-gray-300">Senior Computer Science and Cybersecurity Student</p>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              <a href="mailto:ansamr76@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
+              <a href="mailto:ansamr76@gmail.com" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 ansamr76@gmail.com
               </a>{' '}
               | +97431076188 | Doha, Qatar
@@ -833,7 +833,8 @@ export default function Home() {
             <div className="space-y-8">
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
-                <a className="text-blue-600 dark:text-blue-400 mb-2" href='https://mecouncil.org/'>Middle East Council - Doha, Qatar</a>
+                <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                 href='https://mecouncil.org/'>Middle East Council - Doha, Qatar</a>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - Current</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
                   <li className="pl-6 list-indent-1">Designed MongoDB database schemas for efficient data storage and retrieval.</li>
