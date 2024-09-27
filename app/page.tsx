@@ -886,7 +886,7 @@ export default function Home() {
               </a>
 
               <p className="text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Science, Concentration in Cyber Security</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p>
+              {/* <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p> */}
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                 <li>Member of AI club</li>
                 <li>Member of computing club</li>
