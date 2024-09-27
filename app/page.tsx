@@ -742,7 +742,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
 }
 
 export default function Home() {
-  const [darkMode, setDarkMode] = React.useState(false)
+  const [darkMode, setDarkMode] = React.useState(true)
 
   React.useEffect(() => {
     const isDarkMode = localStorage.getItem('darkMode') === 'true'
@@ -819,7 +819,7 @@ export default function Home() {
                 'Critical Thinking',
                 'Linux',
               ].map((skill) => (
-                <li key={skill} className="bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg hover:scale-105">
+                <li key={skill} className="bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                   {skill}
                 </li>
               ))}
@@ -831,25 +831,33 @@ export default function Home() {
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Professional Experience</h2>
             <div className="space-y-8">
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-2">Middle East Council - Doha, Qatar</p>
+                <a className="text-blue-600 dark:text-blue-400 mb-2" href='https://mecouncil.org/'>Middle East Council - Doha, Qatar</a>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - Current</p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>Designed MongoDB database schemas for efficient data storage and retrieval across multiple applications.</li>
-                  <li>Utilized Python libraries for web scraping from various news outlets.</li>
-                  <li>Designed user-friendly interfaces using React and Tailwind CSS.</li>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
+                  <li className="pl-6 list-indent-1">Designed MongoDB database schemas for efficient data storage and retrieval.</li>
+                  <li className="pl-6 list-indent-1">Utilized Python libraries for web scraping from various news outlets.</li>
+                  <li className="pl-6 list-indent-1">Designed user-friendly interfaces using React and Tailwind CSS.</li>
                 </ul>
               </div>
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl transition duration-500 hover:scale-105 ">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Researcher</h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-2">Qatar Research Development And Innovation - UERP - Doha, Qatar</p>
+                <a href="https://connect.qrdi.org.qa/scientific-research/p/opportunities/p/25" 
+                className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                Qatar Research Development And Innovation - UERP - Doha, Qatar</a>
+
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">March 2024 - January 2025</p>
-                <p className="text-gray-700 dark:text-gray-300">UREP31-013-3-004: Virtual Reality (VR) Simulated Interaction Between Micro-Mobility Vehicles and Pedestrians in Qatar</p>
+                {/* <p className="text-gray-700 dark:text-gray-300"></p> */}
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6"> 
+                  <li className="pl-6 list-indent-1">UREP31-013-3-004: Virtual Reality (VR) Simulated Interaction Between Micro-Mobility Vehicles and Pedestrians in Qatar.</li>
+                  <li className=" pl-6 list-indent-1">Research Objective: Examine pedestrian responses to micro-mobility vehicles with a focus on speed and proximity.
+                  </li>
+                  </ul>
               </div>
-              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
-                <p className="text-blue-600 dark:text-blue-400 mb-2">Qatar Computing Research Institute (QCRI) - Doha, Qatar</p>
+                <a className="text-blue-600 dark:text-blue-400 mb-2" href='https://www.hbku.edu.qa/en/qcri'>Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">May 2024 - July 2024</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                   <li>Utilized Python libraries for web crawling and data extraction.</li>
@@ -866,8 +874,8 @@ export default function Home() {
         <FadeInSection>
           <section>
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Education</h2>
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg">
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Qatar University</h3>
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <a href='https://qu.edu.qa'><h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200" >Qatar University</h3></a>
               <p className="text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Science, Concentration in Cyber Security</p>
               <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p>
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
