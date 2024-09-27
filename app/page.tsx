@@ -780,7 +780,7 @@ export default function Home() {
               <a href="mailto:ansamr76@gmail.com" className="text-blue-600 dark:text-blue-400 hover:underline">
                 ansamr76@gmail.com
               </a>{' '}
-              | +974 3107 6188 | Doha, Qatar
+              | +97431076188 | Doha, Qatar
             </p>
           </section>
         </FadeInSection>
