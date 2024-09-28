@@ -884,6 +884,20 @@ export default function Home() {
                   </ul>
               </div>
             </FadeInSection>
+            <FadeInSection>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Machine Learning Intern</h3>
+                <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                 href='https://www.hbku.edu.qa/en/qcri'> Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - December 2024</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
+                  <li className="pl-6 list-indent-1">Designed prompts for Fanar model to enhance output relevance.</li>
+                  <li className="pl-6 list-indent-1">Documented model architectures and testing processes for reproducibility.</li>
+                  <li className="pl-6 list-indent-1">Worked within cross-functional teams in an Agile environment to improve project outcomes.</li>
+                  <li className="pl-6 list-indent-1">Focused on enhancing model understanding of standerd Arabic and various dialects to improve accuracy and relevance.</li>
+                </ul>
+              </div>
+              </FadeInSection>
 
               <FadeInSection>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
