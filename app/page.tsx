@@ -727,7 +727,7 @@ const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
   })
 
   // Updated transforms for smoother animation and scaling
-  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1])
+  const opacity = useTransform(scrollYProgress, [0, 0.3], [0, 1.6])
   const y = useTransform(scrollYProgress, [0, 0.3], [60, 0])
   const scale = useTransform(scrollYProgress, [0, 0.3], [0.95, 1])
 
@@ -783,6 +783,14 @@ export default function Home() {
               </a>{' '}
               | +97431076188 | Doha, Qatar
             </p>
+            <p className="text-lg text-gray-600 dark:text-gray-400 flex space-x-4 mt-4">
+            <a href="https://www.linkedin.com/in/anas-madkoor-035224298/" target="_blank" rel="noopener noreferrer" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105">
+              <FaLinkedin className="inline-block mr-2 text-2xl" /> LinkedIn
+            </a>
+            <a href="https://github.com/C974" target="_blank" rel="noopener noreferrer" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105">
+              <FaGithub className="inline-block mr-2 text-2xl" /> GitHub
+            </a>
+          </p>
           </section>
         </FadeInSection>
 
@@ -833,7 +841,7 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Professional Experience</h2>
             <div className="space-y-8">
 
-
+            <FadeInSection>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl transition duration-500 hover:scale-105 ">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Researcher</h3>
                 <a href="https://connect.qrdi.org.qa/scientific-research/p/opportunities/p/25" 
@@ -848,7 +856,9 @@ export default function Home() {
                   </li>
                   </ul>
               </div>
+            </FadeInSection>
 
+              <FadeInSection>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
@@ -860,7 +870,8 @@ export default function Home() {
                   <li className="pl-6 list-indent-1">Designed user-friendly interfaces using React and Tailwind CSS.</li>
                 </ul>
               </div>
-         
+              </FadeInSection>
+              <FadeInSection>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" href='https://www.hbku.edu.qa/en/qcri'>
@@ -874,6 +885,7 @@ export default function Home() {
                   <li>Developed a full-stack website using Next.js and React.</li>
                 </ul>
               </div>
+              </FadeInSection>
             </div>
           </section>
         </FadeInSection>
