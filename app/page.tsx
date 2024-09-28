@@ -921,13 +921,14 @@ export default function Home() {
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Education</h2>
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
               {/* <a href='https://qu.edu.qa'><h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200" >Qatar University</h3></a> */}
+              <a href="https://qu.edu.qa" className="relative inline-block group">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
-                Bachelor of Computer Science, Concentration in Cyber Security
+                  Qatar University
                   <span className="absolute bottom-0 left-0 h-[2px] w-full bg-gray-800 dark:bg-gray-200 scale-x-0 origin-bottom-right transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
                 </h3>
-                <a href="https://qu.edu.qa" className="relative inline-block group">
-              <p className="text-blue-600 dark:text-blue-400 mb-2"> Qatar University</p>
               </a>
+
+              <p className="text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Science, Concentration in Cyber Security</p>
               {/* <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p> */}
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                 <li>Member of AI club</li>
