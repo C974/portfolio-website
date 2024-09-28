@@ -836,6 +836,32 @@ export default function Home() {
           </section>
         </FadeInSection>
 
+        {/* <FadeInSection>
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Highlights</h2>
+            <div className="space-y-8">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl transition duration-500 hover:scale-105 ">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Qatar Computing Reaserch</h3>
+                <p className="text-lg text-gray-600 dark:text-gray-400">Qatar University</p>
+                <p className="text-lg text-gray-600 dark:text-gray-400">September 2020 - May 2024</p>
+              </div>
+
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl transition duration-500 hover:scale-105 ">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Bachelor of Computer Science</h3>
+                <p className="text-lg text-gray-600 dark:text-gray-400">Qatar University</p>
+                <p className="text-lg text-gray-600 dark:text-gray-400">September 2020 - May 2024</p>
+              </div>
+
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl transition duration-500 hover:scale-105 ">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Bachelor of Computer Science</h3>
+                <p className="text-lg text-gray-600 dark:text-gray-400">Qatar University</p>
+                <p className="text-lg text-gray-600 dark:text-gray-400">September 2020 - May 2024</p>
+              </div>
+
+            </div>
+          </section>
+        </FadeInSection> */}
+
         <FadeInSection>
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Professional Experience</h2>
