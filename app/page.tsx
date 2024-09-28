@@ -713,6 +713,7 @@
 import React, { useRef, ReactNode } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Sun, Moon } from 'lucide-react'
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 interface FadeInSectionProps {
   children: ReactNode;
