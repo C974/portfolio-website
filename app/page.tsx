@@ -917,7 +917,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" href='https://www.hbku.edu.qa/en/qcri'>
                 Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">May 2024 - July 2024</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">May 2024 - August 2024</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
                   <li>Utilized Python libraries for web crawling and data extraction.</li>
                   <li>Integrated Large Language Model (LLama 3) for data extraction.</li>
