@@ -776,7 +776,7 @@ export default function Home() {
         <FadeInSection>
           <section className="mb-16">
             <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">Anas Madkoor</h1>
-            <p className="text-2xl mb-4 text-gray-700 dark:text-gray-300">Senior Computer Science and Cybersecurity Student</p>
+            <p className="text-2xl mb-4 text-gray-700 dark:text-gray-300">Senior Computer Science Student</p>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               <a href="mailto:ansamr76@gmail.com" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 ansamr76@gmail.com
@@ -798,10 +798,23 @@ export default function Home() {
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Professional Summary</h2>
             <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-              As a senior Computer Science student specializing in Cybersecurity at Qatar University, I am deeply
+              As a senior Computer Science student at Qatar University, I am deeply
               passionate about the intersection of technology and society. With a keen interest in AI, I am driven to
               explore its potential contributions to societal advancement.
             </p>
+          </section>
+        </FadeInSection>
+
+        <FadeInSection>
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Languages</h2>
+            <ul className="grid grid-cols-1 md:grid-cols-3 gap-4 ">
+              {['English', 'Arabic'].map((language) => (
+                <li key={language} className="bg-white dark:bg-gray-800 px-4 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                  {language}
+                </li>
+              ))}
+            </ul>
           </section>
         </FadeInSection>
 
