@@ -888,7 +888,7 @@ export default function Home() {
                 className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 Qatar Research Development And Innovation - UERP - Doha, Qatar</a>
 
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">March 2024 - January 2025</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">March 2024 - Current</p>
                 {/* <p className="text-gray-700 dark:text-gray-300"></p> */}
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6"> 
                   <li className="pl-6 list-indent-1">UREP31-013-3-004: Virtual Reality (VR) Simulated Interaction Between Micro-Mobility Vehicles and Pedestrians in Qatar.</li>
@@ -902,7 +902,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Machine Learning Intern</h3>
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
                  href='https://www.hbku.edu.qa/en/qcri'> Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - December 2024</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - Current</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
                   <li className="pl-6 list-indent-1">Designed prompts for Fanar model to enhance output relevance.</li>
                   <li className="pl-6 list-indent-1">Documented model architectures and testing processes for reproducibility.</li>
@@ -917,7 +917,7 @@ export default function Home() {
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
                  href='https://mecouncil.org/'>Middle East Council - Doha, Qatar</a>
-                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - December 2024</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2024 - Current</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
                   <li className="pl-6 list-indent-1">Designed MongoDB database schemas for efficient data storage and retrieval.</li>
                   <li className="pl-6 list-indent-1">Utilized Python libraries for web scraping from various news outlets.</li>
@@ -931,15 +931,57 @@ export default function Home() {
                 <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" href='https://www.hbku.edu.qa/en/qcri'>
                 Qatar Computing Research Institute (QCRI) - Doha, Qatar</a>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">May 2024 - August 2024</p>
-                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
-                  <li>Utilized Python libraries for web crawling and data extraction.</li>
-                  <li>Integrated Large Language Model (LLama 3) for data extraction.</li>
-                  <li>Developed a chatbot using the Retrieval-Augmented Generation (RAG) framework.</li>
-                  <li>Explored VR and AR technologies, creating 3D avatars using Unity and Unreal Engine.</li>
-                  <li>Developed a full-stack website using Next.js and React.</li>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
+                  <li className="pl-6 list-indent-1">Utilized Python libraries for web crawling and data extraction.</li>
+                  <li className="pl-6 list-indent-1">Integrated Large Language Model (LLama 3) for data extraction.</li>
+                  <li className="pl-6 list-indent-1">Developed a chatbot using the Retrieval-Augmented Generation (RAG) framework.</li>
+                  <li className="pl-6 list-indent-1">Explored VR and AR technologies, creating 3D avatars using Unity and Unreal Engine.</li>
+                  <li className="pl-6 list-indent-1">Developed a full-stack website using Next.js and React.</li>
                 </ul>
               </div>
               </FadeInSection>
+
+              <FadeInSection>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Network Staff Member</h3>
+                <a className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left" href='https://www.fifa.com/'>
+                FIFA World Cup 2022 Fan Zone Network </a>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">October 2022 - December 2022</p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
+                  <li className="pl-6 list-indent-1">Implemented and maintained network infrastructure to support high-volume data traffic.</li>
+                  <li className="pl-6 list-indent-1">Implemented security measures to protect network resources and sensitive data from cyber threats.</li>
+                  <li className="pl-6 list-indent-1">Monitored network performance and troubleshooted issues in real-time to minimize downtime and optimize user experience.</li>
+                </ul>
+              </div>
+              </FadeInSection>
+            </div>
+          </section>
+        </FadeInSection>
+
+        <FadeInSection>
+          <section className="mb-16">
+            <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Volunteering</h2>
+            <div className="space-y-8">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <a href="https://www.fifa.com/" className="relative inline-block group">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
+                Fifa Arab Cup 2021
+                  <span className="absolute bottom-0 left-0 h-[2px] w-full bg-gray-800 dark:bg-gray-200 scale-x-0 origin-bottom-right transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
+                </h3>
+              </a>
+                <p className="text-lg text-gray-600 dark:text-gray-400">November 2021 - December 2021</p>
+              </div>
+
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <a href="https://qu.edu.qa" className="relative inline-block group">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
+                  Qatar University Open Day
+                  <span className="absolute bottom-0 left-0 h-[2px] w-full bg-gray-800 dark:bg-gray-200 scale-x-0 origin-bottom-right transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
+                </h3>
+              </a>
+                <p className="text-lg text-gray-600 dark:text-gray-400">February 2024</p>
+              </div>
+
             </div>
           </section>
         </FadeInSection>
