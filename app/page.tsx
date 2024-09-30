@@ -775,8 +775,8 @@ export default function Home() {
       <main className="container mx-auto px-4 py-12 max-w-4xl">
         <FadeInSection>
           <section className="mb-16">
-            <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">Anas Madkoor</h1>
-            <p className="text-2xl mb-4 text-gray-700 dark:text-gray-300">Senior Computer Science Student</p>
+            <h1 className="text-5xl font-bold mb-1 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text">Anas Madkoor</h1>
+            <p className="text-2xl mb-2 text-gray-700 dark:text-gray-300">Senior Computer Science Student</p>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               <a href="mailto:ansamr76@gmail.com" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 ansamr76@gmail.com
