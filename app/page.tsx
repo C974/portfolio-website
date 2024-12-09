@@ -921,7 +921,11 @@ export default function Home() {
                 <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300 list-outside pl-6">
                   <li className="pl-6 list-indent-1">Designed MongoDB database schemas for efficient data storage and retrieval.</li>
                   <li className="pl-6 list-indent-1">Utilized Python libraries for web scraping from various news outlets.</li>
-                  <li className="pl-6 list-indent-1">Designed user-friendly interfaces using React and Tailwind CSS.</li>
+                  <li className="pl-6 list-indent-1">Utilized NewsAPI for real-time news updates.</li>
+                  <li className="pl-6 list-indent-1">Developed a web application that aggregates and summarizes news articles using React, Tailwind CSS and MongoDB.</li>
+
+                  {/* <li className="pl-6 list-indent-1">Designed user-friendly interfaces using React and Tailwind CSS.</li> */}
+
                 </ul>
               </div>
               </FadeInSection>
@@ -962,6 +966,7 @@ export default function Home() {
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Volunteering</h2>
             <div className="space-y-8">
+              <FadeInSection>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
               <a href="https://www.fifa.com/" className="relative inline-block group">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
@@ -971,7 +976,8 @@ export default function Home() {
               </a>
                 <p className="text-lg text-gray-600 dark:text-gray-400">November 2021 - December 2021</p>
               </div>
-
+              </FadeInSection>
+              <FadeInSection>
               <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
               <a href="https://qu.edu.qa" className="relative inline-block group">
                 <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
@@ -981,7 +987,18 @@ export default function Home() {
               </a>
                 <p className="text-lg text-gray-600 dark:text-gray-400">February 2024</p>
               </div>
-
+              </FadeInSection>
+              <FadeInSection>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md transition-all duration-300 hover:shadow-2xl hover:scale-105">
+              <a href="https://wise2024-qatar.com/" className="relative inline-block group">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200 transition-transform duration-300 group-hover:text-gray-600 group-hover:scale-105 relative">
+                  International Conference On Web Information Systems Engineering (WISE)
+                  <span className="absolute bottom-0 left-0 h-[2px] w-full bg-gray-800 dark:bg-gray-200 scale-x-0 origin-bottom-right transition-transform duration-300 group-hover:scale-x-100 group-hover:origin-bottom-left"></span>
+                </h3>
+              </a>
+                <p className="text-lg text-gray-600 dark:text-gray-400">December 2025</p>
+              </div>
+              </FadeInSection>
             </div>
           </section>
         </FadeInSection>
@@ -1001,8 +1018,9 @@ export default function Home() {
               <p className="text-blue-600 dark:text-blue-400 mb-2">Bachelor of Computer Science, Concentration in Cyber Security</p>
               {/* <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">September 2021 - June 2025</p> */}
               <ul className="list-disc list-inside space-y-2 text-gray-700 dark:text-gray-300">
+                <li>Part of Association for Computing Machinery (ACM) club events management team </li>
                 <li>Member of AI club</li>
-                <li>Member of computing club</li>
+                <li>Member of Computing club</li>
                 <li>Member of TEDx club</li>
                 <li>Member of eSports club</li>
               </ul>
