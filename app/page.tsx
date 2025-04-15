@@ -191,11 +191,9 @@ export default function Home() {
                   </p>
                   <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
                     {[
-                      "Designed IoT system to optimize water and energy in greenhouse farming.",
-                      "Collected real-time data with sensors for temperature, humidity, and soil moisture.",
-                      "Developed ML automation for irrigation, ventilation, and lighting.",
-                      "Enhanced efficiency, reduced waste, and improved crop yield.",
-                      "Supported Qatar's food security with AI-driven precision farming."
+                      "UREP 32-0227-250242: IoT- and Al-Enabled Smart Irrigation System for Sustainable Greenhouse Farming.",
+                      "Research Objective: Enhance agricultural efficiency and food security by integrating IoT and AI to optimize irrigation, resource management, and environmental control within greenhouses."
+                     
                     ].map((item, index) => (
                       <li key={index} className="flex items-start">
                         <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
@@ -275,9 +273,168 @@ export default function Home() {
                   </ul>
                 </div>
               </FadeInSection>
-              
-              {/* Additional Experience entries would follow the same pattern */}
-              {/* For brevity, I'm only including 3 examples but you can add all entries following the same structure */}
+
+              {/* Researcher */}
+              <FadeInSection>
+                <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Researcher</h3>
+                  <a
+                    href="https://connect.qrdi.org.qa/scientific-research/p/opportunities/p/25"
+                    className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                  >
+                    Qatar Research Development And Innovation - UERP - Doha, Qatar
+                  </a>
+                  <br></br>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4 inline-flex items-center">
+                    <span className="inline-block w-4 h-4 mr-2 bg-green-500 rounded-full animate-pulse"></span>
+                    March 2024 - Present
+                  </p>
+                  <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      UREP31-013-3-004: Virtual Reality (VR) Simulated Interaction Between Micro-Mobility Vehicles and Pedestrians in Qatar.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Research Objective: Examine pedestrian responses to micro-mobility vehicles with a focus on speed and proximity.
+                    </li>
+                  </ul>
+                </div>
+              </FadeInSection>
+
+              {/* Research participant */}
+              <FadeInSection>
+                <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Research participant</h3>
+                  <a
+                    href="https://qatar-weill.cornell.edu/"
+                    className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                  >
+                    Weill Cornell Medicine - Doha, Qatar
+                  </a>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4 flex-row items-center">
+                    November 2024 - January 2025
+                  </p>
+                  <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Contributed to a research study on minimal burden wearables for assessing student stress.
+                    </li>
+                  </ul>
+                </div>
+              </FadeInSection>
+
+              {/* Software Engineering Intern at QCRI */}
+              <FadeInSection>
+                <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Software Engineering Intern</h3>
+                  <a
+                    href="https://www.hbku.edu.qa/en/qcri"
+                    className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                  >
+                    Qatar Computing Research Institute (QCRI) - Doha, Qatar
+                  </a>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4 flex-row items-center">
+                    May 2024 - August 2024
+                  </p>
+                  <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Utilized Python libraries for web crawling and data extraction.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Integrated Large Language Model (LLama 3) for data extraction.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Developed a chatbot using the Retrieval-Augmented Generation (RAG) framework.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Explored VR and AR technologies, creating 3D avatars using Unity and Unreal Engine.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Developed a full-stack website using Next.js and React.
+                    </li>
+                  </ul>
+                </div>
+              </FadeInSection>
+
+              {/* Network Staff Member */}
+              <FadeInSection>
+                <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Network Staff Member</h3>
+                  <a
+                    href="https://www.fifa.com/"
+                    className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                  >
+                    FIFA World Cup 2022 Fan Zone Network
+                  </a>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4 flex-row items-center">
+                    October 2022 - December 2022
+                  </p>
+                  <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Implemented and maintained network infrastructure to support high-volume data traffic.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Implemented security measures to protect network resources and sensitive data from cyber threats.
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      Monitored network performance and troubleshooted issues in real-time to minimize downtime and optimize user experience.
+                    </li>
+                  </ul>
+                </div>
+              </FadeInSection>
             </div>
           </section>
         </FadeInSection>
