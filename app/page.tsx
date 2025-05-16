@@ -51,6 +51,7 @@ export default function Home() {
 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
+    
   }
 
   return (
@@ -65,8 +66,8 @@ export default function Home() {
       <main className="container mx-auto px-4 py-12 max-w-4xl">
       <FadeInSection>
           <section className="mb-24 backdrop-blur-sm bg-white/40 dark:bg-gray-900/40 p-8 rounded-2xl border border-white/20 dark:border-gray-800/20 shadow-xl transition-all duration-500">
-            <h1 className="text-6xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 text-transparent bg-clip-text animate-gradient">Anas Madkoor</h1>
-            <p className="text-2xl mb-3 text-gray-700 dark:text-gray-300">Senior Computer Science Student</p>
+            <h1 className="text-6xl font-bold mb-3 bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-700 text-transparent bg-clip-text animate-gradient">Anas Madkoor</h1>
+            <p className="text-2xl mb-3 text-gray-700 dark:text-gray-300">BSc Computer Science & Cybersecurity, Qatar University</p>
             <p className="text-lg text-gray-600 dark:text-gray-400">
               <a href="mailto:ansamr76@gmail.com" className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
                 ansamr76@gmail.com
@@ -91,10 +92,9 @@ export default function Home() {
         <FadeInSection>
           <section className="mb-16">
             <h2 className="text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400">Professional Summary</h2>
-            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300">
-              As a senior Computer Science student at Qatar University, I am deeply
-              passionate about the intersection of technology and society. With a keen interest in AI, I am driven to
-              explore its potential contributions to societal advancement.
+            <p className="text-lg leading-relaxed text-gray-700 dark:text-gray-300 ">
+            As a fresh graduate in Computer Science from Qatar University, with a concentration in Cybersecurity, I am deeply passionate about the intersection of technology and society. 
+            With a strong foundation in securing digital systems and a keen interest in AI, I am driven to explore its potential contributions to societal advancement while ensuring robust protection against cyber threats.
             </p>
           </section>
         </FadeInSection>
@@ -208,39 +208,7 @@ export default function Home() {
                 </div>
               </FadeInSection>
               
-              {/* Research Intern */}
-              <FadeInSection>
-                <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Research Intern</h3>
-                  <a 
-                    href="https://www.hbku.edu.qa/en/qcri" 
-                    className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
-                    Qatar Computing Research Institute (QCRI) - Doha, Qatar
-                  </a>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4  items-center flex-row">
-                    <span className="inline-block w-4 h-4 mr-2 bg-green-500 rounded-full animate-pulse"></span>
-                    September 2024 - Present
-                  </p>
-                  <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
-                    {[
-                      "Designed prompts for Fanar model to boost output relevance.",
-                      "Optimized prompts to improve model accuracy.",
-                      "Worked in Agile team to enhance project development.",
-                      "Improved NLP for standard Arabic and dialects."
-                    ].map((item, index) => (
-                      <li key={index} className="flex items-start">
-                        <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
-                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                        </span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </FadeInSection>
-              
+            
               {/* Software Engineering Intern at Middle East Council */}
               <FadeInSection>
                 <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
@@ -277,7 +245,7 @@ export default function Home() {
               {/* Researcher */}
               <FadeInSection>
                 <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
-                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Researcher</h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Researcher Assistant</h3>
                   <a
                     href="https://connect.qrdi.org.qa/scientific-research/p/opportunities/p/25"
                     className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
@@ -310,6 +278,40 @@ export default function Home() {
                 </div>
               </FadeInSection>
 
+              {/* Research Intern */}
+
+              <FadeInSection>
+              <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
+                <h3 className="text-2xl font-semibold mb-2 text-gray-800 dark:text-gray-200">Research Intern</h3>
+                <a 
+                  href="https://www.hbku.edu.qa/en/qcri" 
+                  className="relative inline-block text-blue-600 dark:text-blue-400 text-lg transition-transform duration-300 hover:text-blue-700 hover:scale-105 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-blue-600 after:scale-x-0 after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+                  Qatar Computing Research Institute (QCRI) - Doha, Qatar
+                </a>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-2 mb-4  items-center flex-row">
+                  September 2024 - February 2025
+                </p>
+                <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                  {[
+                    "Designed prompts for Fanar model to boost output relevance.",
+                    "Optimized prompts to improve model accuracy.",
+                    "Worked in Agile team to enhance project development.",
+                    "Improved NLP for standard Arabic and dialects."
+                  ].map((item, index) => (
+                    <li key={index} className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeInSection>
+              
+
               {/* Research participant */}
               <FadeInSection>
                 <div className="backdrop-blur-lg bg-gradient-to-br from-white/40 to-white/10 dark:from-gray-900/40 dark:to-gray-900/10 p-8 rounded-xl border border-white/20 dark:border-gray-800/30 shadow-xl transition-all duration-300 hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02]">
@@ -331,6 +333,18 @@ export default function Home() {
                         </svg>
                       </span>
                       Contributed to a research study on minimal burden wearables for assessing student stress.
+
+                    </li>
+                  </ul>
+                   <ul className="list-none space-y-3 text-gray-700 dark:text-gray-300">
+                    <li className="flex items-start">
+                      <span className="inline-block w-6 h-6 mr-2 text-blue-500 dark:text-blue-400 flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                      </span>
+                  Assisted in data collection and analysis to evaluate physiological and behavioral stress indicators
+
                     </li>
                   </ul>
                 </div>
@@ -574,7 +588,7 @@ export default function Home() {
                     </h3>
                   </a>
                   <p className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 font-medium mb-4">
-                    Bachelor of Computer Science, Concentration in Cyber Security
+                    BSc Computer Science, Concentration in Cyber Security
                   </p>
                 </div>
                 <div className="md:text-right">
