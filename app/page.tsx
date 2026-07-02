@@ -1,12 +1,17 @@
 import Link from "next/link";
-import { ArrowUpRight, Github, Linkedin, Mail } from "lucide-react";
+import {
+  ArrowUpRight,
+  BrainCircuit,
+  Code2,
+  Github,
+  Linkedin,
+  Mail,
+  Network,
+  Radio,
+  Sparkles,
+} from "lucide-react";
 import { Reveal } from "./components/Reveal";
 import { ThemeToggle } from "./components/ThemeToggle";
-
-/*
-  Shape system: interactive elements are pills (rounded-full),
-  containers are sharp (no radius). One accent: emerald.
-*/
 
 const LINKS = {
   email: "mailto:ansamr76@gmail.com",
@@ -30,9 +35,7 @@ const experience: Experience[] = [
     orgUrl: "https://www.hbku.edu.qa/en/qcri",
     dates: "2025 - Present",
     current: true,
-    points: [
-      "Applied AI research spanning Arabic NLP and LLM-based systems.",
-    ],
+    points: ["Applied AI research spanning Arabic NLP and LLM-based systems."],
   },
   {
     role: "Research Assistant, Smart Irrigation",
@@ -99,16 +102,6 @@ const experience: Experience[] = [
   },
 ];
 
-/*
-  Publications: add entries here and they will render automatically.
-  Example shape:
-  {
-    title: "Paper title",
-    venue: "Conference or journal, year",
-    authors: "A. Madkoor, ...",
-    url: "https://...",
-  }
-*/
 type Publication = {
   title: string;
   venue: string;
@@ -118,9 +111,10 @@ type Publication = {
 
 const publications: Publication[] = [];
 
-const skillGroups: { title: string; items: string[] }[] = [
+const skillGroups = [
   {
     title: "AI & Machine Learning",
+    icon: BrainCircuit,
     items: [
       "Python & PyTorch",
       "LLM prompt design & evaluation",
@@ -131,6 +125,7 @@ const skillGroups: { title: string; items: string[] }[] = [
   },
   {
     title: "Software Engineering",
+    icon: Code2,
     items: [
       "TypeScript & JavaScript",
       "React & Next.js",
@@ -141,12 +136,8 @@ const skillGroups: { title: string; items: string[] }[] = [
   },
   {
     title: "Systems & Security",
-    items: [
-      "Network engineering",
-      "Linux",
-      "Security fundamentals",
-      "Agile teamwork",
-    ],
+    icon: Network,
+    items: ["Network engineering", "Linux", "Security fundamentals", "Agile teamwork"],
   },
 ];
 
@@ -189,37 +180,40 @@ const community = [
   },
 ];
 
+const highlights = [
+  { label: "Research tracks", value: "AI + IoT + VR" },
+  { label: "Current base", value: "Doha, Qatar" },
+  { label: "Focus", value: "Arabic NLP" },
+];
+
 const accentLink =
-  "text-emerald-700 transition-colors hover:text-emerald-800 dark:text-emerald-400 dark:hover:text-emerald-300";
+  "text-cyan-700 transition-colors hover:text-cyan-800 dark:text-cyan-300 dark:hover:text-cyan-200";
 
 export default function Home() {
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-40 border-b border-zinc-200/80 bg-zinc-50/80 backdrop-blur-md dark:border-zinc-800/80 dark:bg-zinc-950/80">
-        <nav className="mx-auto flex h-16 max-w-5xl items-center justify-between px-4 sm:px-6">
-          <Link
-            href="/"
-            className="whitespace-nowrap text-sm font-medium tracking-tight"
-          >
-            Anas Madkoor
+      <div className="site-backdrop" aria-hidden="true">
+        <div className="orb orb-one" />
+        <div className="orb orb-two" />
+        <div className="signal-grid" />
+      </div>
+
+      <header className="fixed inset-x-0 top-0 z-40 border-b border-zinc-900/10 bg-zinc-50/75 backdrop-blur-2xl dark:border-white/10 dark:bg-zinc-950/70">
+        <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6">
+          <Link href="/" className="group flex items-center gap-3 text-sm font-semibold tracking-tight">
+            <span className="grid h-8 w-8 place-items-center rounded-full border border-cyan-500/30 bg-cyan-400/10 text-xs text-cyan-700 dark:text-cyan-200">
+              AM
+            </span>
+            <span>Anas Madkoor</span>
           </Link>
           <div className="flex items-center gap-1 sm:gap-2">
-            <a
-              href="#experience"
-              className="rounded-full px-2.5 py-1.5 text-sm text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 sm:px-3"
-            >
+            <a href="#experience" className="nav-link">
               Experience
             </a>
-            <a
-              href="#publications"
-              className="rounded-full px-2.5 py-1.5 text-sm text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 sm:px-3"
-            >
+            <a href="#publications" className="nav-link">
               Publications
             </a>
-            <a
-              href="#contact"
-              className="hidden rounded-full px-3 py-1.5 text-sm text-zinc-600 transition-colors hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 sm:block"
-            >
+            <a href="#contact" className="nav-link hidden sm:inline-flex">
               Contact
             </a>
             <ThemeToggle />
@@ -227,92 +221,112 @@ export default function Home() {
         </nav>
       </header>
 
-      <main className="mx-auto max-w-5xl px-6">
-        {/* Hero */}
-        <section className="flex min-h-[100dvh] flex-col justify-center pt-16">
-          <Reveal>
-            <p className="font-mono text-xs uppercase tracking-[0.2em] text-emerald-700 dark:text-emerald-400">
-              AI Research Assistant, QCRI
-            </p>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <h1 className="mt-6 text-6xl font-medium leading-none tracking-tighter sm:text-7xl md:text-8xl">
-              Anas Madkoor
-            </h1>
-          </Reveal>
-          <Reveal delay={0.16}>
-            <p className="mt-8 max-w-[52ch] text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-              Working on Arabic NLP, LLM evaluation, and applied machine
-              learning at the Qatar Computing Research Institute in Doha.
-            </p>
-          </Reveal>
-          <Reveal delay={0.24}>
-            <div className="mt-10 flex flex-wrap items-center gap-4">
-              <a
-                href={LINKS.email}
-                className="inline-flex items-center gap-2 rounded-full bg-emerald-700 px-6 py-3 text-sm font-medium text-white transition-all hover:bg-emerald-800 active:scale-[0.98] dark:bg-emerald-400 dark:text-zinc-950 dark:hover:bg-emerald-300"
-              >
-                <Mail className="h-4 w-4" strokeWidth={1.5} />
-                Get in touch
-              </a>
-              <a
-                href={LINKS.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-5 py-3 text-sm text-zinc-700 transition-colors hover:border-zinc-400 hover:text-zinc-900 active:scale-[0.98] dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-zinc-100"
-              >
-                <Github className="h-4 w-4" strokeWidth={1.5} />
-                GitHub
-              </a>
-              <a
-                href={LINKS.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-zinc-300 px-5 py-3 text-sm text-zinc-700 transition-colors hover:border-zinc-400 hover:text-zinc-900 active:scale-[0.98] dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500 dark:hover:text-zinc-100"
-              >
-                <Linkedin className="h-4 w-4" strokeWidth={1.5} />
-                LinkedIn
-              </a>
+      <main className="relative mx-auto max-w-7xl px-4 sm:px-6">
+        <section className="grid min-h-[100dvh] items-center gap-10 pb-20 pt-24 lg:grid-cols-[1.08fr_0.92fr]">
+          <div>
+            <Reveal>
+              <p className="inline-flex rounded-full border border-cyan-500/25 bg-cyan-400/10 px-4 py-2 font-mono text-xs uppercase tracking-[0.18em] text-cyan-700 dark:text-cyan-200">
+                AI Research Assistant, QCRI
+              </p>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <h1 className="mt-7 max-w-4xl text-5xl font-semibold leading-[0.95] tracking-tighter text-zinc-950 dark:text-white sm:text-7xl lg:text-8xl">
+                Building useful AI systems for language, data, and the real world.
+              </h1>
+            </Reveal>
+            <Reveal delay={0.16}>
+              <p className="mt-7 max-w-2xl text-base leading-8 text-zinc-600 dark:text-zinc-300 sm:text-lg">
+                I work across Arabic NLP, LLM evaluation, RAG systems, IoT research, and full-stack products with a research-first engineering mindset.
+              </p>
+            </Reveal>
+            <Reveal delay={0.24}>
+              <div className="mt-9 flex flex-wrap items-center gap-3">
+                <a href={LINKS.email} className="primary-button">
+                  <Mail className="h-4 w-4" strokeWidth={1.7} />
+                  Get in touch
+                </a>
+                <a href={LINKS.github} target="_blank" rel="noopener noreferrer" className="secondary-button">
+                  <Github className="h-4 w-4" strokeWidth={1.7} />
+                  GitHub
+                </a>
+                <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="secondary-button">
+                  <Linkedin className="h-4 w-4" strokeWidth={1.7} />
+                  LinkedIn
+                </a>
+              </div>
+            </Reveal>
+          </div>
+
+          <Reveal delay={0.18} className="lg:justify-self-end">
+            <div className="hero-panel">
+              <div className="hero-panel-scan" />
+              <div className="flex items-center justify-between gap-4 border-b border-white/10 pb-6">
+                <div>
+                  <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan-200/80">
+                    Live profile
+                  </p>
+                  <h2 className="mt-3 text-2xl font-semibold tracking-tight text-white">
+                    Research engineer in motion
+                  </h2>
+                </div>
+                <span className="grid h-12 w-12 place-items-center rounded-full bg-cyan-300 text-zinc-950">
+                  <Radio className="h-5 w-5" strokeWidth={1.7} />
+                </span>
+              </div>
+              <div className="mt-7 grid gap-3">
+                {highlights.map((item, index) => (
+                  <div key={item.label} className="metric-row" style={{ animationDelay: `${index * 0.7}s` }}>
+                    <span>{item.label}</span>
+                    <strong>{item.value}</strong>
+                  </div>
+                ))}
+              </div>
+              <div className="mt-8 overflow-hidden rounded-[1.25rem] border border-white/10 bg-white/[0.04] p-4">
+                <div className="signal-line" />
+                <div className="mt-4 grid grid-cols-5 gap-2">
+                  {Array.from({ length: 15 }).map((_, index) => (
+                    <span key={index} className="data-cell" style={{ animationDelay: `${index * 0.08}s` }} />
+                  ))}
+                </div>
+              </div>
             </div>
           </Reveal>
         </section>
 
-        {/* Experience */}
-        <section id="experience" className="grid gap-10 border-t border-zinc-200 py-24 dark:border-zinc-800 md:grid-cols-12">
-          <div className="md:col-span-4">
-            <h2 className="sticky top-24 text-2xl font-medium tracking-tight">
-              Experience
-            </h2>
-          </div>
-          <div className="md:col-span-8">
+        <section id="experience" className="section-shell">
+          <Reveal>
+            <div className="section-heading">
+              <h2>Experience</h2>
+              <p>
+                Research, engineering, and field systems work across institutes, policy teams, and public-scale events.
+              </p>
+            </div>
+          </Reveal>
+          <div className="mt-12 grid gap-4">
             {experience.map((job, i) => (
-              <Reveal key={`${job.role}-${job.dates}`}>
-                <article
-                  className={
-                    i === 0
-                      ? "pb-10"
-                      : "border-t border-zinc-200 py-10 last:pb-0 dark:border-zinc-800"
-                  }
-                >
-                  <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
-                    <h3 className="text-lg font-medium tracking-tight">
-                      {job.role}
-                    </h3>
-                    <p className="font-mono text-xs text-zinc-500 dark:text-zinc-500">
+              <Reveal key={`${job.role}-${job.dates}`} delay={(i % 3) * 0.05}>
+                <article className="experience-card group">
+                  <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+                    <div>
+                      <div className="flex flex-wrap items-center gap-3">
+                        <h3 className="text-xl font-semibold tracking-tight text-zinc-950 dark:text-white">
+                          {job.role}
+                        </h3>
+                        {job.current ? <span className="status-pill">Current</span> : null}
+                      </div>
+                      <a href={job.orgUrl} target="_blank" rel="noopener noreferrer" className={`mt-2 inline-flex ${accentLink}`}>
+                        {job.org}
+                      </a>
+                    </div>
+                    <p className="font-mono text-xs text-zinc-500 dark:text-zinc-400 md:text-right">
                       {job.dates}
                     </p>
                   </div>
-                  <a
-                    href={job.orgUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`mt-1 inline-block text-sm ${accentLink}`}
-                  >
-                    {job.org}
-                  </a>
-                  <ul className="mt-4 space-y-2 text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
+                  <ul className="mt-6 grid gap-2 text-sm leading-7 text-zinc-600 dark:text-zinc-300 md:grid-cols-2">
                     {job.points.map((point) => (
-                      <li key={point}>{point}</li>
+                      <li key={point} className="relative pl-5 before:absolute before:left-0 before:top-[0.8em] before:h-1.5 before:w-1.5 before:rounded-full before:bg-cyan-500">
+                        {point}
+                      </li>
                     ))}
                   </ul>
                 </article>
@@ -321,175 +335,126 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Publications */}
-        <section id="publications" className="border-t border-zinc-200 py-24 dark:border-zinc-800">
+        <section id="publications" className="section-shell">
           <Reveal>
-            <h2 className="text-2xl font-medium tracking-tight">
-              Publications
-            </h2>
+            <div className="section-heading">
+              <h2>Publications</h2>
+              <p>Research outputs and papers from ongoing work will appear here as they become available.</p>
+            </div>
           </Reveal>
           {publications.length > 0 ? (
-            <div className="mt-10">
-              {publications.map((pub, i) => (
+            <div className="mt-10 grid gap-4">
+              {publications.map((pub) => (
                 <Reveal key={pub.title}>
-                  <article
-                    className={
-                      i === 0
-                        ? "pb-8"
-                        : "border-t border-zinc-200 py-8 last:pb-0 dark:border-zinc-800"
-                    }
-                  >
+                  <article className="experience-card">
                     {pub.url ? (
-                      <a
-                        href={pub.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-lg font-medium tracking-tight transition-colors hover:text-emerald-700 dark:hover:text-emerald-400"
-                      >
+                      <a href={pub.url} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold tracking-tight transition-colors hover:text-cyan-700 dark:hover:text-cyan-300">
                         {pub.title}
                       </a>
                     ) : (
-                      <h3 className="text-lg font-medium tracking-tight">
-                        {pub.title}
-                      </h3>
+                      <h3 className="text-xl font-semibold tracking-tight">{pub.title}</h3>
                     )}
-                    <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-                      {pub.authors}
-                    </p>
-                    <p className="mt-1 font-mono text-xs text-zinc-500">
-                      {pub.venue}
-                    </p>
+                    <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">{pub.authors}</p>
+                    <p className="mt-2 font-mono text-xs text-zinc-500">{pub.venue}</p>
                   </article>
                 </Reveal>
               ))}
             </div>
           ) : (
             <Reveal>
-              <div className="mt-10 border border-dashed border-zinc-300 px-8 py-16 text-center dark:border-zinc-700">
-                <p className="text-lg font-medium tracking-tight">
-                  Publications will be listed here.
-                </p>
-                <p className="mx-auto mt-3 max-w-[45ch] text-sm leading-relaxed text-zinc-600 dark:text-zinc-400">
-                  Papers from ongoing research at QCRI and Qatar University are
-                  in preparation.
-                </p>
+              <div className="empty-state">
+                <Sparkles className="h-6 w-6 text-cyan-600 dark:text-cyan-300" strokeWidth={1.7} />
+                <h3>Publications are in preparation.</h3>
+                <p>Papers from ongoing research at QCRI and Qatar University will be listed here.</p>
               </div>
             </Reveal>
           )}
         </section>
 
-        {/* Skills */}
-        <section className="border-t border-zinc-200 py-24 dark:border-zinc-800">
+        <section className="section-shell">
           <Reveal>
-            <h2 className="text-2xl font-medium tracking-tight">Skills</h2>
+            <div className="section-heading">
+              <h2>Skills</h2>
+              <p>A practical stack for AI research, production web apps, data systems, and reliable infrastructure.</p>
+            </div>
           </Reveal>
-          <div className="mt-10 grid gap-10 sm:grid-cols-2 md:grid-cols-3">
-            {skillGroups.map((group, i) => (
-              <Reveal key={group.title} delay={i * 0.06}>
-                <div className="border-l-2 border-emerald-700/60 pl-5 dark:border-emerald-400/50">
-                  <h3 className="text-sm font-medium">{group.title}</h3>
-                  <ul className="mt-4 space-y-2 text-sm text-zinc-600 dark:text-zinc-400">
-                    {group.items.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
-            ))}
+          <div className="mt-12 grid gap-4 lg:grid-cols-3">
+            {skillGroups.map((group, i) => {
+              const Icon = group.icon;
+              return (
+                <Reveal key={group.title} delay={i * 0.07}>
+                  <div className="skill-card">
+                    <Icon className="h-6 w-6 text-cyan-700 dark:text-cyan-300" strokeWidth={1.7} />
+                    <h3>{group.title}</h3>
+                    <ul>
+                      {group.items.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </section>
 
-        {/* Community & Education */}
-        <section className="border-t border-zinc-200 py-24 dark:border-zinc-800">
+        <section className="section-shell">
           <Reveal>
-            <h2 className="text-2xl font-medium tracking-tight">
-              Community & Education
-            </h2>
+            <div className="section-heading">
+              <h2>Community & Education</h2>
+              <p>Leadership, volunteering, and academic work connected to computing communities in Qatar and MENA.</p>
+            </div>
           </Reveal>
-          <div className="mt-10 grid gap-x-12 gap-y-6 sm:grid-cols-2">
+          <div className="mt-12 grid gap-4 md:grid-cols-2">
             {community.map((item, i) => (
               <Reveal key={item.name} delay={(i % 2) * 0.06}>
-                <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4">
-                  <div>
-                    <a
-                      href={item.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-sm font-medium transition-colors hover:text-emerald-700 dark:hover:text-emerald-400"
-                    >
-                      {item.name}
-                    </a>
-                    <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                      {item.role}
-                    </p>
-                  </div>
-                  <p className="font-mono text-xs text-zinc-500 sm:shrink-0">
-                    {item.dates}
-                  </p>
-                </div>
+                <a href={item.url} target="_blank" rel="noopener noreferrer" className="community-card group">
+                  <span>
+                    <strong>{item.name}</strong>
+                    <small>{item.role}</small>
+                  </span>
+                  <span className="font-mono text-xs text-zinc-500 dark:text-zinc-400">{item.dates}</span>
+                </a>
               </Reveal>
             ))}
           </div>
           <Reveal>
-            <div className="mt-16 flex flex-wrap items-baseline justify-between gap-4 border-t border-zinc-200 pt-10 dark:border-zinc-800">
+            <div className="education-strip">
               <div>
-                <a
-                  href="https://qu.edu.qa"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg font-medium tracking-tight transition-colors hover:text-emerald-700 dark:hover:text-emerald-400"
-                >
+                <a href="https://qu.edu.qa" target="_blank" rel="noopener noreferrer">
                   Qatar University
                 </a>
-                <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
-                  BSc Computer Science, Concentration in Cybersecurity
-                </p>
+                <p>BSc Computer Science, Concentration in Cybersecurity</p>
               </div>
-              <p className="font-mono text-xs text-zinc-500">2021 - 2025</p>
+              <span>2021 - 2025</span>
             </div>
           </Reveal>
         </section>
 
-        {/* Contact */}
-        <section id="contact" className="border-t border-zinc-200 py-24 dark:border-zinc-800">
+        <section id="contact" className="section-shell pb-16">
           <Reveal>
-            <a
-              href={LINKS.email}
-              className="group inline-flex items-baseline gap-3 text-5xl font-medium tracking-tighter transition-colors hover:text-emerald-700 dark:hover:text-emerald-400 sm:text-6xl md:text-7xl"
-            >
-              Get in touch
-              <ArrowUpRight
-                className="h-8 w-8 self-center transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 sm:h-10 sm:w-10"
-                strokeWidth={1.5}
-              />
-            </a>
-          </Reveal>
-          <Reveal delay={0.08}>
-            <div className="mt-12 flex flex-col justify-between gap-6 text-sm text-zinc-600 dark:text-zinc-400 sm:flex-row sm:items-end">
-              <div className="flex flex-wrap gap-x-8 gap-y-2">
-                <a href={LINKS.email} className={accentLink}>
-                  ansamr76@gmail.com
-                </a>
-                <a
-                  href={LINKS.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-                >
-                  GitHub
-                </a>
-                <a
-                  href={LINKS.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="transition-colors hover:text-zinc-900 dark:hover:text-zinc-100"
-                >
-                  LinkedIn
-                </a>
-              </div>
-              <p className="text-zinc-500">
-                Doha, Qatar. © 2026 Anas Madkoor
+            <div className="contact-panel">
+              <p className="font-mono text-xs uppercase tracking-[0.18em] text-cyan-700 dark:text-cyan-200">
+                Open to research and engineering conversations
               </p>
+              <a href={LINKS.email} className="group mt-6 inline-flex max-w-5xl items-center gap-4 text-5xl font-semibold leading-none tracking-tighter text-zinc-950 transition-colors hover:text-cyan-700 dark:text-white dark:hover:text-cyan-200 sm:text-7xl lg:text-8xl">
+                Get in touch
+                <ArrowUpRight className="h-9 w-9 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 sm:h-12 sm:w-12" strokeWidth={1.5} />
+              </a>
+              <div className="mt-12 flex flex-col justify-between gap-6 text-sm text-zinc-600 dark:text-zinc-300 sm:flex-row sm:items-end">
+                <div className="flex flex-wrap gap-x-8 gap-y-3">
+                  <a href={LINKS.email} className={accentLink}>
+                    ansamr76@gmail.com
+                  </a>
+                  <a href={LINKS.github} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-zinc-950 dark:hover:text-white">
+                    GitHub
+                  </a>
+                  <a href={LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-zinc-950 dark:hover:text-white">
+                    LinkedIn
+                  </a>
+                </div>
+                <p className="text-zinc-500">Doha, Qatar. (c) 2026 Anas Madkoor</p>
+              </div>
             </div>
           </Reveal>
         </section>
