@@ -1,115 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html {
-  scroll-behavior: smooth;
-}
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  scroll-padding-top: 5rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+::selection {
+  background-color: rgb(52 211 153 / 0.35);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-/* Dark mode custom styles */
-.dark .bg-gray-100 {
-  background-color: #1a202c; /* Dark mode background */
-}
-
-.dark .bg-gray-200 {
-  background-color: #2d3748; /* Dark mode background */
-}
-
-.dark .text-gray-600 {
-  color: #e2e8f0; /* Light text color */
-}
-
-.dark .text-gray-700 {
-  color: #edf2f7; /* Light text color */
-}
-
-.dark .text-gray-900 {
-  color: #f7fafc; /* Light text color */
-}
-
-/* Additional custom styles for smooth transitions */
-.transition-colors {
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-.dark {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-  font-family: 'Poppins', sans-serif;
-}
-
-@layer base {
-  body {
-    @apply text-gray-900 dark:text-gray-100;
-  }
-}
-
-@layer components {
-  .section-title {
-    @apply text-3xl font-semibold mb-6 text-blue-600 dark:text-blue-400;
-  }
-}
-
-@layer utilities {
-  .animate-gradient {
-    background-size: 200%;
-    animation: gradientShift 5s ease infinite;
-  }
-
-  @keyframes gradientShift {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+:focus-visible {
+  outline: 2px solid rgb(16 185 129);
+  outline-offset: 2px;
 }
