@@ -172,7 +172,7 @@ html {
 }
 
 :focus-visible {
-  outline: 2px solid rgb(16 185 129);
+  outline: 2px solid rgb(6 182 212);
   outline-offset: 2px;
 }
 
